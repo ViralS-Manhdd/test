@@ -76,9 +76,12 @@ const HINT: TextStyle = {
   marginVertical: spacing[2],
 }
 
-export interface DemoScreenProps extends NavigationScreenProps<{}> {}
+export interface DemoScreenProps extends NavigationScreenProps<{}> {
+
+}
 
 export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
+  
   const goBack = React.useMemo(() => () => props.navigation.goBack(null), [props.navigation])
 
   const demoReactotron = React.useMemo(
